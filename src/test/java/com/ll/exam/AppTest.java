@@ -6,6 +6,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AppTest {
     @Test
+    public void addTest() {
+        int result = Calculator.add("10 + 20");
+
+        assertEquals(30, result);
+    }
+    @Test
     public void addTest_2() {
         int result = Calculator.add("20 + 20");
 
