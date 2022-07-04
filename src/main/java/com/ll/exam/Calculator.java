@@ -2,7 +2,9 @@ package com.ll.exam;
 
 public class Calculator {
     public static int add(String s) {
-        if(s.equals("10 + 20")) return 30;
-        return 40;
+        String[] sBits = s.split(" \\+ ");
+        int n1 = Integer.valueOf(sBits[0]);
+        int n2 = Integer.valueOf(sBits[1]);
+        return n1 + n2;
     }
 }

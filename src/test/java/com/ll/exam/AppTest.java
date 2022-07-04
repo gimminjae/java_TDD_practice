@@ -17,4 +17,10 @@ public class AppTest {
 
         assertEquals(40, result);
     }
+    @Test
+    public void addTest_3() {
+        int result = Calculator.add("10 + 10");
+
+        assertEquals(20, result);
+    }
 }
