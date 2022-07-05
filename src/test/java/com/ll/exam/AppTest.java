@@ -23,4 +23,16 @@ public class AppTest {
 
         assertEquals(20, result);
     }
+    @Test
+    public void 빼기() {
+        int result = Calculator.run("10 - 10");
+
+        assertEquals(0, result);
+    }
+    @Test
+    public void 곱하기() {
+        int result = Calculator.run("10 * 10");
+
+        assertEquals(100, result);
+    }
 }
